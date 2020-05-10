@@ -33,12 +33,7 @@ server.on('listening', onListening);
 const SocketListener = require('../SocketListener');
 const sListener = new SocketListener(io);
 
-const sockets = [];
-const currentPlaying = {
-  videoId: '',
-  play: false,
-  time: 0,
-};
+console.log('Server started success');
 
 /*io.on('connection', (socket) => {
   socket.videoRoomID = (Math.random() * 100000).toString(32);
