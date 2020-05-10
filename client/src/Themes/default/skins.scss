@@ -1,0 +1,43 @@
+@import '../fonts/Roboto';
+@import '../fonts/Video';
+
+:global {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    background: #131212;
+    color: #000;
+
+    &.theme-default {
+      --header-bg: #21232b;
+      --main-gradient: linear-gradient(0deg, rgba(29,28,51,1) 0%, rgba(71,56,43,0.7665441176470589) 51%, rgba(29,28,51,1) 100%);
+      --decor-color: #bbbaff;
+      --button-color: var(--decor-color);
+
+      --border-radius: 4px;
+
+      --input-bg: #00000047;
+
+      --checkbox-bg: rgba(255, 255, 255, 0.25);
+      --checkbox-bg-checked: var(--input-bg);
+      --checkbox-text-color: var(--decor-color);
+      --checkbox-text-color-checked: #fff;
+
+      --standard-width: 60vw;
+      --standard-height: calc( (60vw/16) * 9 );
+
+      --error: #ffdede;
+      --success: #b1edb4;
+      --info: #dceaff;;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  padding-top: 25px;
+}
+
+.action-wrapper {
+  box-shadow: 0 0 34px 5px #000;
+  width: var(--standard-width);
+  height: var(--standard-height);
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.users-wrapper {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 15vw;
+}
+
+.user {
+  background: var(--header-bg);
+  border-radius: 4px;
+  padding: 15px;
+  color: #fff;
+  margin-bottom: 10px;
+  animation-name: user;
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+}
+
+.alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+@keyframes user {
+  from {
+    background: var(--success);
+  }
+
+  to {
+    background: var(--header-bg);
+  }
+}

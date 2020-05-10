@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "dom",
+      "es2016",
+      "webworker"
+    ],
+    "outDir": "../server/public",
+    "noImplicitAny": false,
+    "target": "es6",
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "compileOnSave": true,
+  "buildOnSave": true,
+  "exclude": [
+    "build",
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}

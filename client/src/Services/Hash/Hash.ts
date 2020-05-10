@@ -1,0 +1,1 @@
+export const generateHash = () => Math.round(Math.random() * 100000).toString(32);

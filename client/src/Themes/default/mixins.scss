@@ -1,0 +1,5 @@
+@mixin gridBase($columnGap, $rowGap) {
+  display: grid;
+  grid-column-gap: $columnGap;
+  grid-row-gap: $rowGap;
+}

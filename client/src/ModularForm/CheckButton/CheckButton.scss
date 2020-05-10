@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+
+.cell {
+  cursor: pointer;
+  position: relative;
+  flex: 1 1 auto;
+
+  input {
+    display: none;
+
+    &:checked {
+      + .decor {
+        background: var(--checkbox-bg-checked);
+        color: var(--checkbox-text-color-checked);
+        box-shadow: inset 0 0 1px 1px #fff;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.decor {
+  width: 100%;
+  background: var(--checkbox-bg);
+  color: var(--checkbox-text-color);
+  display: inline-block;
+}

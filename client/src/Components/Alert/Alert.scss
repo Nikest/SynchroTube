@@ -1,0 +1,30 @@
+.container {
+  transition: .25s;
+  color: #000;
+  font-size: 20px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.none {
+  height: 0;
+}
+
+.info {
+  height: 54px;
+  background: var(--info);
+  opacity: 1;
+}
+
+.error {
+  height: 54px;
+  background: var(--error);
+  opacity: 1;
+}
+
+.success {
+  height: 54px;
+  background: var(--success);
+  opacity: 1;
+}

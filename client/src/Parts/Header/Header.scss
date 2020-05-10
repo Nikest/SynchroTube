@@ -1,0 +1,33 @@
+.container {
+  text-align: center;
+  background: var(--header-bg);
+  color: #fff;
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 30vw 40vw 30vw;;
+  grid-column-gap: 15px;
+  height: 70px;
+}
+
+.room {
+  grid-column: 1;
+}
+
+.field {
+  font-size: 13px;
+  grid-column: 1;
+}
+
+.decor {
+  color: var(--decor-color);
+  font-size: 18px;
+  grid-column: 2;
+}
+
+.row-1 {
+  grid-row: 1;
+}
+
+.row-2 {
+  grid-row: 2;
+}

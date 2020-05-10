@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'video-font';
+  src: url('vedeo-font.eot');
+  src: url('vedeo-font.eot?#iefix') format('embedded-opentype'),
+  url('vedeo-font.woff') format('woff'),
+  url('vedeo-font.ttf') format('truetype'),
+  url('vedeo-font.svg#vedeo-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*='icon-']:before{
+  display: inline-block;
+  font-family: 'video-font', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+:global {
+  .icon-play:before{content:'\0041';}
+  .icon-pause:before{content:'\0042';}
+  .icon-gear:before{content:'\0043';}
+  .icon-video-file:before{content:'\0044';}
+  .icon-search:before{content:'\0045';}
+  .icon-right:before{content:'\0046';}
+  .icon-left:before{content:'\0047';}
+  .icon-copy:before{content:'\0048';}
+  .icon-close:before{content:'\0049';}
+  .icon-volume:before{content:'\004a';}
+}

@@ -1,0 +1,22 @@
+.container {
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  min-width: 80px;
+  min-height: 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 250ms;
+  color: var(--button-color);
+  font-weight: 100;
+  padding: 0 10px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.35);
+  }
+
+  &.icon {
+    min-width: 0 !important;
+    padding: 0 5px !important;
+  }
+}
