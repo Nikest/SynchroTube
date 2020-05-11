@@ -75,8 +75,17 @@ export class Enter extends React.Component<IEnterProps, IEnterState> {
         this.formData = {...this.formData, ...data};
     };
 
-    onEnter = () => {
-        DataRequester.intro(this.formData)
+    onEnter = (data?) => {
+        DataRequester.intro(data || this.formData)
+    };
+
+    componentDidMount(): void {
+        if(location.hash) {
+            this.onEnter({
+                action: checkButtonData[1].value,
+                room: location.hash.replace('#',''),
+            })
+        }
     }
 }
 

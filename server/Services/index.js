@@ -1,3 +1,4 @@
 const hashGenerator = require('./HashGenerator');
+const numberGenerator = require('./NumberGenerator');
 
-module.exports = { hashGenerator };
+module.exports = { hashGenerator, numberGenerator };

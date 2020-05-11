@@ -1,5 +1,5 @@
 const Cinema = require('../cinema');
-const hashGenerator = require('../Services').hashGenerator;
+const { hashGenerator, numberGenerator } = require('../Services');
 
 const cinema = new Cinema();
 
@@ -41,7 +41,8 @@ const SocketListener = class  {
             };
 
             socket.on('intro', (data) => {
-                guest = cinema.createGuest(data.name, socket, hashGenerator());
+                const userName = data.name || `User_${numberGenerator()}`;
+                guest = cinema.createGuest(userName, socket, hashGenerator());
                 guest.connection.emit('intro', guest.id);
 
                 action[data.action](data);

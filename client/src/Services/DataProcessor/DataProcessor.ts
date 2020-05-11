@@ -12,6 +12,7 @@ export const dataProcessor = {
 
             if (data.enter) {
                 storeInterface().setData('room', data);
+                history.pushState(null, null, `#${data.id}`);
             }
         }
 
@@ -21,6 +22,7 @@ export const dataProcessor = {
 
             if (data.create) {
                 storeInterface().setData('room', data);
+                history.pushState(null, null, `#${data.id}`);
             }
         }
 
@@ -32,6 +34,7 @@ export const dataProcessor = {
                 needToAlert = false;
                 storeInterface().setData('room', false);
                 storeInterface().setData('users', []);
+                history.pushState(null, null, `#`);
             }
         }
 
