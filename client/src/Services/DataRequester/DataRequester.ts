@@ -49,6 +49,7 @@ socket.on('disconnect', data => { console.log('disconnect');
     setTimeout(() => {
         storeInterface().setData('room', false);
         storeInterface().setData('users', []);
+        history.pushState(null, null, `#`);
     }, 3000)
 });
 
