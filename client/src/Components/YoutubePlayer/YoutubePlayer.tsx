@@ -164,6 +164,7 @@ export class YoutubePlayer extends React.Component<IYoutubePlayerProps, IYoutube
         });
         eventEmitter.subscribe('time', (time) => {
             this.player.seekTo(time);
+            this.play();
         });
         eventEmitter.subscribe('needCurrentTime', (forUserID) => {
             DataRequester.giveCurrentTime(this.player.getCurrentTime(), forUserID)
@@ -171,6 +172,7 @@ export class YoutubePlayer extends React.Component<IYoutubePlayerProps, IYoutube
         eventEmitter.subscribe('updateCurrentTime', (seekTo) => {
             this.needToSynchronouse = true;
             this.player.seekTo(seekTo);
+            this.play();
         });
     }
 }
