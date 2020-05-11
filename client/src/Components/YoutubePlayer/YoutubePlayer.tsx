@@ -139,7 +139,7 @@ export class YoutubePlayer extends React.Component<IYoutubePlayerProps, IYoutube
             width: this.containerRef.current.clientWidth,
             playerVars: {
                 rel: 0,
-                autoplay: 0,
+                autoplay: 1,
                 controls: 0,
                 enablejsapi: 1,
                 modestbranding: 0,
