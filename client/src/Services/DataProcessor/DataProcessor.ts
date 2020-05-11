@@ -13,6 +13,8 @@ export const dataProcessor = {
             if (data.enter) {
                 storeInterface().setData('room', data);
                 history.pushState(null, null, `#${data.id}`);
+            } else {
+                history.pushState(null, null, `#`);
             }
         }
 
